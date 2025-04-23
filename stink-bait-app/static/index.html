@@ -1,0 +1,306 @@
+<html class="scroll-smooth" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   iLLest Store Online - Alien Steroids Edition
+  </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&amp;family=Orbitron:wght@700&amp;family=Russo+One&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script src="https://js.stripe.com/v3/">
+  </script>
+  <style>
+   /* Custom neon glow text */
+    .neon-text {
+      text-shadow:
+        0 0 5px #00ffea,
+        0 0 10px #00ffea,
+        0 0 20px #00ffea,
+        0 0 40px #00ffea,
+        0 0 80px #00ffea;
+    }
+    /* Animated gradient background */
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    .animated-gradient {
+      background: linear-gradient(270deg, #00ffea, #00ffea, #00ffea, #00ffea);
+      background-size: 800% 800%;
+      animation: gradientBG 15s ease infinite;
+    }
+    /* Flicker animation for neon effect */
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+      }
+      20%, 22%, 24%, 55% {
+        opacity: 0.4;
+      }
+    }
+    .flicker {
+      animation: flicker 3s infinite;
+    }
+  </style>
+ </head>
+ <body class="bg-gradient-to-br from-black via-green-900 to-black font-['Roboto_Mono'] text-gray-100 selection:bg-cyan-400 selection:text-black min-h-screen flex flex-col">
+  <header class="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-cyan-600 shadow-lg">
+   <div class="container mx-auto flex flex-col md:flex-row justify-between items-center py-6 px-6 md:px-12">
+    <h1 class="text-4xl md:text-5xl font-russo-one font-extrabold tracking-widest text-cyan-400 neon-text flicker select-none drop-shadow-lg flex items-center gap-3">
+     <img alt="Alien head icon glowing cyan" class="w-12 h-12 animate-pulse" height="48" src="https://storage.googleapis.com/a1aa/image/297879bf-2a2d-420a-04b9-fd5c02ed10ba.jpg" width="48"/>
+     iLLest Store Online
+    </h1>
+    <nav class="mt-4 md:mt-0 space-x-4 md:space-x-8 text-lg md:text-xl font-semibold uppercase tracking-wider">
+     <a class="text-cyan-400 hover:text-white transition duration-300 hover:scale-110" href="#stink-bait">
+      Stink Bait
+     </a>
+     <a class="text-cyan-400 hover:text-white transition duration-300 hover:scale-110" href="#ai-music">
+      AI Music Video
+     </a>
+     <a class="text-cyan-400 hover:text-white transition duration-300 hover:scale-110" href="#ai-commercial">
+      AI Commercial
+     </a>
+     <a class="text-cyan-400 hover:text-white transition duration-300 hover:scale-110" href="#ghost-writing">
+      Ghost Writing
+     </a>
+     <a class="text-cyan-400 hover:text-white transition duration-300 hover:scale-110" href="#ai-viral">
+      AI Viral Videos
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="container mx-auto px-6 py-12 space-y-28 flex-grow max-w-7xl">
+   <!-- Stink Bait Section -->
+   <section class="text-center max-w-5xl mx-auto bg-gradient-to-tr from-cyan-900/80 via-green-900/70 to-black/90 rounded-3xl p-12 shadow-2xl border border-cyan-500" id="stink-bait">
+    <h2 class="text-5xl font-orbitron font-extrabold mb-6 text-cyan-400 neon-text flicker">
+     iLL Smell Stink Bait Products
+    </h2>
+    <p class="text-xl mb-12 text-cyan-200 max-w-3xl mx-auto tracking-wide leading-relaxed drop-shadow-md">
+     The ultimate stink bait products including dip and scents. Guaranteed to attract and trap with powerful scents that defy the laws of nature.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+     <div class="bg-black/70 rounded-2xl shadow-xl border border-cyan-600 p-8 transform hover:scale-105 transition-transform duration-500">
+      <img alt="Close-up of a glowing green jar of stink bait dip with vapor rising, on a dark reflective surface" class="rounded-xl mb-6 shadow-lg border border-cyan-400" height="300" src="https://storage.googleapis.com/a1aa/image/252ea2ed-4d80-4297-f8f5-afd6aaff0acd.jpg" width="400"/>
+      <h3 class="text-3xl font-bold mb-3 text-cyan-300 tracking-wide">
+       Stink Bait Dip
+      </h3>
+      <p class="text-cyan-200 mb-5 leading-relaxed">
+       Powerful dip to attract the biggest catch, infused with alien-grade scent technology.
+      </p>
+      <p class="font-extrabold text-5xl text-cyan-400">
+       $19.99
+      </p>
+     </div>
+     <div class="bg-black/70 rounded-2xl shadow-xl border border-cyan-600 p-8 transform hover:scale-105 transition-transform duration-500">
+      <img alt="Neon green vials of stink bait scents glowing on a futuristic metallic table with alien symbols" class="rounded-xl mb-6 shadow-lg border border-cyan-400" height="300" src="https://storage.googleapis.com/a1aa/image/00eebeeb-6e26-4fa4-6e0b-c5910786a39e.jpg" width="400"/>
+      <h3 class="text-3xl font-bold mb-3 text-cyan-300 tracking-wide">
+       Stink Bait Scents
+      </h3>
+      <p class="text-cyan-200 mb-5 leading-relaxed">
+       Long-lasting scents to lure your prey, engineered with extraterrestrial precision.
+      </p>
+      <p class="font-extrabold text-5xl text-cyan-400">
+       $14.99
+      </p>
+     </div>
+    </div>
+    <form class="max-w-lg mx-auto bg-black/60 rounded-3xl p-8 border border-cyan-500 shadow-lg" id="payment-form">
+     <h3 class="text-2xl font-orbitron font-bold text-cyan-400 mb-6 text-center neon-text">
+      Secure Checkout
+     </h3>
+     <div class="bg-black rounded-lg p-5 border border-cyan-400 mb-6 shadow-inner" id="card-element">
+     </div>
+     <div class="text-red-500 mb-6 font-semibold text-center" id="card-errors" role="alert">
+     </div>
+     <button class="w-full bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700 text-black font-extrabold text-xl rounded-3xl py-4 shadow-lg flex justify-center items-center gap-4 transition-transform duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-cyan-400 focus:ring-opacity-75" id="submit-button" type="submit">
+      <span class="flex items-center gap-3" id="button-text">
+       <i class="fas fa-shopping-cart fa-lg">
+       </i>
+       Pay Now
+      </span>
+      <span class="hidden text-black" id="spinner">
+       <svg class="animate-spin h-6 w-6 text-black" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+        </circle>
+        <path class="opacity-75" d="M4 12a8 8 0 018-8v8H4z" fill="currentColor">
+        </path>
+       </svg>
+       Processing...
+      </span>
+     </button>
+     <p class="hidden mt-6 text-green-400 font-bold text-center text-lg tracking-wide" id="success-message">
+      Payment successful! Thank you for your purchase.
+     </p>
+    </form>
+   </section>
+   <!-- AI Music Video Production -->
+   <section class="max-w-5xl mx-auto bg-gradient-to-tr from-green-900/80 via-cyan-900/70 to-black/90 rounded-3xl p-12 shadow-2xl border border-cyan-600" id="ai-music">
+    <h2 class="text-5xl font-orbitron font-extrabold mb-6 text-cyan-400 neon-text flicker text-center">
+     AI Music Video Production
+    </h2>
+    <p class="text-xl mb-10 text-cyan-200 max-w-4xl mx-auto tracking-wide leading-relaxed drop-shadow-md text-center">
+     Create stunning AI-generated music videos tailored to your style and music. Fast, affordable, and professional with cosmic creativity.
+    </p>
+    <div class="bg-black/70 rounded-3xl shadow-xl border border-cyan-500 p-8 flex flex-col md:flex-row items-center gap-10">
+     <img alt="Futuristic AI music video scene with neon holograms and digital sound waves in a dark cybernetic environment" class="rounded-3xl shadow-lg max-w-full md:max-w-xl" height="450" src="https://storage.googleapis.com/a1aa/image/9d7e45f1-848b-474a-d17f-e17bf49e751b.jpg" width="800"/>
+     <p class="text-cyan-300 text-lg max-w-xl leading-relaxed font-semibold drop-shadow-lg">
+      Our AI-powered platform produces unique music videos that capture your artistic vision. Perfect for artists, bands, and content creators who want to transcend reality.
+     </p>
+    </div>
+   </section>
+   <!-- AI Commercial Production -->
+   <section class="max-w-5xl mx-auto bg-gradient-to-tr from-cyan-900/80 via-green-900/70 to-black/90 rounded-3xl p-12 shadow-2xl border border-cyan-600" id="ai-commercial">
+    <h2 class="text-5xl font-orbitron font-extrabold mb-6 text-cyan-400 neon-text flicker text-center">
+     AI Commercial Production
+    </h2>
+    <p class="text-xl mb-10 text-cyan-200 max-w-4xl mx-auto tracking-wide leading-relaxed drop-shadow-md text-center">
+     Generate high-quality AI commercials for your brand or product. Engage your audience with creative and impactful videos powered by alien intelligence.
+    </p>
+    <div class="bg-black/70 rounded-3xl shadow-xl border border-cyan-500 p-8 flex flex-col md:flex-row items-center gap-10">
+     <img alt="High-tech AI commercial scene with futuristic branding elements and holographic product displays in neon cyan and green" class="rounded-3xl shadow-lg max-w-full md:max-w-xl" height="450" src="https://storage.googleapis.com/a1aa/image/91d91576-68a9-4f95-2e48-0717e3febe14.jpg" width="800"/>
+     <p class="text-cyan-300 text-lg max-w-xl leading-relaxed font-semibold drop-shadow-lg">
+      Our AI technology crafts commercials that resonate with your target market, boosting your brand presence and sales with extraterrestrial precision.
+     </p>
+    </div>
+   </section>
+   <!-- Ghost Writing Services -->
+   <section class="max-w-5xl mx-auto bg-gradient-to-tr from-green-900/80 via-cyan-900/70 to-black/90 rounded-3xl p-12 shadow-2xl border border-cyan-600" id="ghost-writing">
+    <h2 class="text-5xl font-orbitron font-extrabold mb-6 text-cyan-400 neon-text flicker text-center">
+     Ghost Writing Services
+    </h2>
+    <p class="text-xl mb-10 text-cyan-200 max-w-4xl mx-auto tracking-wide leading-relaxed drop-shadow-md text-center">
+     Professional ghost writing for books, articles, blogs, and more. Let us help you tell your story with clarity and impact from beyond the stars.
+    </p>
+    <div class="bg-black/70 rounded-3xl shadow-xl border border-cyan-500 p-8 flex flex-col md:flex-row items-center gap-10">
+     <img alt="Futuristic typewriter glowing with neon cyan light, surrounded by floating holographic text representing ghost writing services" class="rounded-3xl shadow-lg max-w-full md:max-w-xl" height="450" src="https://storage.googleapis.com/a1aa/image/bcdb2a8a-4832-4559-b0e8-fab0a6d1bdb3.jpg" width="800"/>
+     <p class="text-cyan-300 text-lg max-w-xl leading-relaxed font-semibold drop-shadow-lg">
+      Experienced writers ready to bring your ideas to life with engaging and polished content crafted with alien precision and creativity.
+     </p>
+    </div>
+   </section>
+   <!-- AI Viral Video Services -->
+   <section class="max-w-5xl mx-auto bg-gradient-to-tr from-cyan-900/80 via-green-900/70 to-black/90 rounded-3xl p-12 shadow-2xl border border-cyan-600" id="ai-viral">
+    <h2 class="text-5xl font-orbitron font-extrabold mb-6 text-cyan-400 neon-text flicker text-center">
+     AI Viral Video Services
+    </h2>
+    <p class="text-xl mb-10 text-cyan-200 max-w-4xl mx-auto tracking-wide leading-relaxed drop-shadow-md text-center">
+     Create viral-worthy AI-generated videos designed to capture attention and spread your message fast across the galaxy.
+    </p>
+    <div class="bg-black/70 rounded-3xl shadow-xl border border-cyan-500 p-8 flex flex-col md:flex-row items-center gap-10">
+     <img alt="Dynamic neon social media icons and AI viral video visuals glowing in a futuristic digital space" class="rounded-3xl shadow-lg max-w-full md:max-w-xl" height="450" src="https://storage.googleapis.com/a1aa/image/4a6423dc-c498-4714-d18a-b29e40dc02d9.jpg" width="800"/>
+     <p class="text-cyan-300 text-lg max-w-xl leading-relaxed font-semibold drop-shadow-lg">
+      Our AI tools analyze trends and craft videos optimized for social media virality, ensuring your message spreads like cosmic wildfire.
+     </p>
+    </div>
+   </section>
+
+   <!-- Discord Bot Building Services -->
+   <section id="discord-bot" class="max-w-5xl mx-auto bg-gradient-to-tr from-cyan-900/80 via-green-900/70 to-black/90 rounded-3xl p-12 shadow-2xl border border-cyan-600">
+    <h2 class="text-5xl font-orbitron font-extrabold mb-6 text-cyan-400 neon-text flicker text-center">
+     Discord Bot Building Services
+    </h2>
+    <p class="text-xl mb-10 text-cyan-200 max-w-4xl mx-auto tracking-wide leading-relaxed drop-shadow-md text-center">
+     Custom Discord bots tailored to your community's needs. Automate moderation, engagement, and more with powerful, reliable bots.
+    </p>
+    <div class="bg-black/70 rounded-3xl shadow-xl border border-cyan-500 p-8 flex flex-col md:flex-row items-center gap-10">
+     <img alt="Discord bot interface with neon cyan and green glowing elements" class="rounded-3xl shadow-lg max-w-full md:max-w-xl" height="450" src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80" width="800"/>
+     <p class="text-cyan-300 text-lg max-w-xl leading-relaxed font-semibold drop-shadow-lg">
+      Our expert developers create bots that enhance your Discord server experience with custom commands, integrations, and automation.
+     </p>
+    </div>
+   </section>
+
+   <!-- Website Bots / Agents / Agent Systems -->
+   <section id="website-bots" class="max-w-5xl mx-auto bg-gradient-to-tr from-green-900/80 via-cyan-900/70 to-black/90 rounded-3xl p-12 shadow-2xl border border-cyan-600">
+    <h2 class="text-5xl font-orbitron font-extrabold mb-6 text-cyan-400 neon-text flicker text-center">
+     Website Bots / Agents / Agent Systems
+    </h2>
+    <p class="text-xl mb-10 text-cyan-200 max-w-4xl mx-auto tracking-wide leading-relaxed drop-shadow-md text-center">
+     Intelligent website bots and agent systems to automate customer support, lead generation, and user engagement on your site.
+    </p>
+    <div class="bg-black/70 rounded-3xl shadow-xl border border-cyan-500 p-8 flex flex-col md:flex-row items-center gap-10">
+     <img alt="AI-powered website bot interface with neon cyan and green glowing elements" class="rounded-3xl shadow-lg max-w-full md:max-w-xl" height="450" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" width="800"/>
+     <p class="text-cyan-300 text-lg max-w-xl leading-relaxed font-semibold drop-shadow-lg">
+      Deploy AI-powered agents that interact with visitors, answer questions, and drive conversions seamlessly.
+     </p>
+    </div>
+   </section>
+
+  </main>
+  <footer class="bg-black/90 border-t border-cyan-600 text-cyan-400 text-center py-8 select-none">
+   <p class="text-lg font-semibold tracking-wide">
+    Contact us:
+    <a class="underline hover:text-cyan-300 transition" href="mailto:info@stinkbait.com">
+     info@stinkbait.com
+    </a>
+   </p>
+   <p class="mt-3 text-sm font-mono tracking-widest uppercase">
+    © 2024 iLLest Store Online. All rights reserved.
+   </p>
+  </footer>
+
+  <!-- Mailing List Subscription -->
+  <section class="bg-black/90 border-t border-cyan-600 text-cyan-400 py-12 px-6 max-w-3xl mx-auto rounded-xl mt-12">
+    <h3 class="text-2xl font-orbitron font-extrabold mb-6 text-cyan-400 neon-text flicker text-center">
+      Join Our Mailing List
+    </h3>
+    <form id="mailing-list-form" class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+      <input type="email" id="email-input" name="email" placeholder="Enter your email" required
+        class="flex-grow rounded-lg px-4 py-3 text-black font-semibold focus:outline-none focus:ring-4 focus:ring-cyan-400" />
+      <button type="submit"
+        class="bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700 text-black font-extrabold text-xl rounded-lg py-3 shadow-lg transition-transform duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-cyan-400 focus:ring-opacity-75">
+        Subscribe
+      </button>
+    </form>
+    <p id="mailing-list-message" class="mt-4 text-center font-semibold"></p>
+  </section>
+
+  <script>
+    // Mailing list form submission
+    const mailingListForm = document.getElementById('mailing-list-form');
+    const emailInput = document.getElementById('email-input');
+    const mailingListMessage = document.getElementById('mailing-list-message');
+
+    mailingListForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      mailingListMessage.textContent = '';
+      const email = emailInput.value.trim();
+
+      if (!email) {
+        mailingListMessage.textContent = 'Please enter a valid email address.';
+        mailingListMessage.classList.add('text-red-500');
+        return;
+      }
+
+      try {
+        const response = await fetch('/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email }),
+        });
+
+        if (!response.ok) {
+          throw new Error('Subscription failed. Please try again later.');
+        }
+
+        mailingListMessage.textContent = 'Thank you for subscribing!';
+        mailingListMessage.classList.remove('text-red-500');
+        mailingListMessage.classList.add('text-green-400');
+        emailInput.value = '';
+      } catch (error) {
+        mailingListMessage.textContent = error.message;
+        mailingListMessage.classList.add('text-red-500');
+      }
+    });
+  </script>
+ </body>
+</html>
